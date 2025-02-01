@@ -1,0 +1,12 @@
+.header-figure {
+    width: 30px;
+    height: 30px;
+    background-color: var(--gray-6);
+    border: 2px solid var(--gray-6);
+    border-radius: 5px;
+}
+
+.header-figure__img{
+    padding-top: 8px;
+    padding-left: 8px;
+}
