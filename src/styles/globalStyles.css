@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
 @import url('reset.css');
 @import url('header.css');
+@import url('genres.css');
+@import url('albums.css');
+@import url('price-range.css');
 
 body{
     font-family: "Inter", sans-serif;
@@ -11,47 +14,34 @@ body{
     align-items: center;
 }
 
-.header{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--brand-2);
-    padding: 20px 0;
+h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--gray-2);
 }
 
-.content{
-    width: 80%;
-    padding: 20px 0;
+h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--gray-2);
 }
 
-.content-musica__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 30%;
+h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--gray-2);
 }
 
-.content-musica__title{
-    padding: 20px 0;
+h4{
+    font-size: 19.2px;
+    font-weight: 600;
+    color: var(--gray-2);
 }
 
-.content-preco__title{
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-.content-albuns__title{
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-.content-preco__figure-img1, .content-preco__figure-img2, .content-preco__figure-img3{
-    width: 230px;
-    height: 230px;
-    padding: 30px;
-    padding-left: 0;
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-3);
 }
 
 :root{

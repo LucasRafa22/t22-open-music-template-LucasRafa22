@@ -16,35 +16,112 @@
     </header>
     <main class="content">
       <section class="content-musica">
-        <h2 class="content-musica__title">Gênero Musical</h2>
-        <ul class="content-musica__list">
-          <li>Todos</li>
-          <li>Pop</li>
-          <li>MPB</li>
-          <li>Forró</li>
-          <li>Samba</li>
-          <li>Baião</li>
-          <li>Rap</li>
-          <li>Hip-Hop</li>
-        </ul>
+        <h2 class="content-musica__title">Gênero Musical</h2> 
+        <input type="radio" name="GeneroMusical" value="Todos">
+        <input type="radio" name="GeneroMusical" value="Pop">
+        <input type="radio" name="GeneroMusical" value="MPB">
+        <input type="radio" name="GeneroMusical" value="Forró">
+        <input type="radio" name="GeneroMusical" value="Samba">
+        <input type="radio" name="GeneroMusical" value="Baião">
+        <input type="radio" name="GeneroMusical" value="Rap">
+        <input type="radio" name="GeneroMusical" value="Hip-Hop">
       </section>
 
       <section class="content-preco">
         <h2 class="content-preco__title">Definir Preço</h2>
-        <input class="content-preco__input" type="range" type="text">
+        <h3 class="content-preco__h3">Até <span class="content-preco__h3-span">R$100</span></h3>
+        <input id="content-preco__input" type="range" type="text">
       </section>
 
       <!-- SEÇÃO DE ALBUNS -->
       <section class="content-albuns">
         <h2 class="content-albuns__title">Albuns Encontrados</h2>
-        <figure class="content-preco__figure">
-          <img class="content-preco__figure-img1" src="src/assets/imgs/cover-1.jpg" alt="imagem Ilustrativa">
-          <img class="content-preco__figure-img2" src="src/assets/imgs/cover-2.jpg" alt="imagem Ilustrativa">
-          <img class="content-preco__figure-img3" src="src/assets/imgs/cover-3.jpg" alt="imagem Ilustrativa">
-          <img class="content-preco__figure-img2" src="src/assets/imgs/cover-2.jpg" alt="imagem Ilustrativa">
-          <img class="content-preco__figure-img1" src="src/assets/imgs/cover-1.jpg" alt="imagem Ilustrativa">
-          <img class="content-preco__figure-img3" src="src/assets/imgs/cover-3.jpg" alt="imagem Ilustrativa">
-        </figure>
+        <div class="content-albuns-div">
+          <div class="content-albuns-div_1">
+            <figure class="content-albuns-div_1__figure">
+              <img class="content-albuns-div_1__figure-img" src="src/assets/imgs/cover-1.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>Acabou o Chorare</h3>
+            <div class="content-albuns-div_1-div">
+              <p>Novos baianos</p>
+              <p>MPB</p>
+            </div>
+            <div class="content-albuns-div_1-div">
+              <h4>R$ 137,91</h4>
+              <button class="content-albuns-div_1-div__button">Comprar</button>
+            </div>
+          </div>
+          <div class="content-albuns-div_2">
+            <figure class="content-albuns-div_2__figure">
+              <img class="content-albuns-div_2__figure-img" src="src/assets/imgs/cover-2.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>The Wall</h3>
+            <div class="content-albuns-div_2-div">
+              <p>Pink Floyd</p>
+              <p>Rock</p>
+            </div>
+            <div class="content-albuns-div_2-div">
+              <h4>R$ 123,56</h4>
+              <button class="content-albuns-div_2-div__button">Comprar</button>
+            </div>
+          </div>
+          <div class="content-albuns-div_3">
+            <figure class="content-albuns-div_3__figure">
+              <img class="content-albuns-div_3__figure-img" src="src/assets/imgs/cover-3.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>To Pimp a Butterfly</h3>
+            <div class="content-albuns-div_3-div">
+              <p>Kendrick Lamar</p>
+              <p>Rap</p>
+            </div>
+            <div class="content-albuns-div_3-div">
+              <h4>R$ 102,66</h4>
+              <button class="content-albuns-div_3-div__button">Comprar</button>
+            </div>
+          </div>
+          <div class="content-albuns-div_2">
+            <figure class="content-albuns-div_2__figure">
+              <img class="content-albuns-div_2__figure-img" src="src/assets/imgs/cover-2.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>The Wall</h3>
+            <div class="content-albuns-div_2-div">
+              <p>Pink Floyd</p>
+              <p>Rock</p>
+            </div>
+            <div class="content-albuns-div_2-div">
+              <h4>R$ 123,56</h4>
+              <button class="content-albuns-div_2-div__button">Comprar</button>
+            </div>
+          </div>
+          <div class="content-albuns-div_1">
+            <figure class="content-albuns-div_1__figure">
+              <img class="content-albuns-div_1__figure-img" src="src/assets/imgs/cover-1.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>Acabou o Chorare</h3>
+            <div class="content-albuns-div_1-div">
+              <p>Novos baianos</p>
+              <p>MPB</p>
+            </div>
+            <div class="content-albuns-div_1-div">
+              <h4>R$ 137,91</h4>
+              <button class="content-albuns-div_1-div__button">Comprar</button>
+            </div>
+          </div>
+          <div class="content-albuns-div_3">
+            <figure class="content-albuns-div_3__figure">
+              <img class="content-albuns-div_3__figure-img" src="src/assets/imgs/cover-3.jpg" alt="imagem Ilustrativa">
+            </figure>
+            <h3>To Pimp a Butterfly</h3>
+            <div class="content-albuns-div_3-div">
+              <p>Kendrick Lamar</p>
+              <p>Rap</p>
+            </div>
+            <div class="content-albuns-div_3-div">
+              <h4>R$ 102,66</h4>
+              <button class="content-albuns-div_3-div__button">Comprar</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>

@@ -1,1 +1,49 @@
-/* Estilização de Preços */
+.content{
+    padding: 20px 0;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.content-preco{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.content-preco__title{
+    padding-bottom: 30px;
+}
+
+.content-preco__h3{
+    color: var(--gray-2);
+    padding-bottom: 30px;
+}
+
+.content-preco__h3-span{
+    color: var(--brand-1);
+}
+
+#content-preco__input{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    background-color: var(--brand-1);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+#content-preco__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 0.5rem solid var(--brand-1);
+  }
