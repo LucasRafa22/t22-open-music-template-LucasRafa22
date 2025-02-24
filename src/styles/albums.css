@@ -1,27 +1,40 @@
-.content-albuns-div{
-    display: flex;
-    flex-wrap: wrap
-}
-
 .content-albuns__title{
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.content-albuns-div_1, .content-albuns-div_2, .content-albuns-div_3{
+.content-albuns-div{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.album-card {
     background-color: var(--gray-7);
+    border-radius: 5px;
     margin-right: 23px;
     margin-bottom: 23px;
+    width: 308px;
+    height: 455px;
 }
 
-.content-albuns-div_1-div, .content-albuns-div_2-div, .content-albuns-div_3-div{
+.album-card img{
+    width: 308px;
+    height: 290px;
+}
+
+.album-card h3{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+.album-card__div, .album-card__div2{
     display: flex;
     justify-content: space-between;
-    padding: 15px 0;
-    padding-right: 30px;
+    padding: 20px 10px;
 }
-
-.content-albuns-div_1-div__button, .content-albuns-div_2-div__button, .content-albuns-div_3-div__button{
+  
+.album-card button{
     background-color: var(--brand-2);
     border: var(--brand-2);
     border-radius: 3px;
@@ -30,11 +43,6 @@
     cursor: pointer;
 }
 
-.content-albuns-div_1-div__button:hover, .content-albuns-div_2-div__button:hover, .content-albuns-div_3-div__button:hover{
+.album-card button:hover{
     background-color: var(--brand-1);
-}
-
-.content-albuns-div_1__figure-img, .content-albuns-div_2__figure-img, .content-albuns-div_3__figure-img{
-    width: 308px;
-    height: 290px;
 }
