@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
-@import url('reset.css');
-@import url('header.css');
-@import url('genres.css');
-@import url('albums.css');
-@import url('price-range.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./genres.css');
+@import url('./albums.css');
+@import url('./price-range.css');
 
 body{
     font-family: "Inter", sans-serif;
     background-color: var(--gray-8);
     width: 1024px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+body.dark-mode {
+    --gray-2: #f8f9fa;
+    --gray-3: #f1f3f5;
+    --gray-5: #CED4DA;
+    --gray-6: #212529;
+    --gray-7: #212529;
+    --gray-8: #15171A;
 }
 
 h1{

@@ -1,5 +1,6 @@
 import { applyInputRangeStyle } from "./inputRange.js"
 import { albumList } from "./albumsDatabase.js"
+import { darkMode } from "./theme.js"
 
 function routine(){
     return applyInputRangeStyle()
@@ -48,13 +49,28 @@ function createAlbumCard(album) {
     return card;
   }
   
-  function displayAlbumCards() {
-    const albumContainer = document.getElementById('content-albuns-div');
-  
-    albumList.forEach((album) => {
+function displayAlbumCards(maxPrice) {
+  const albumContainer = document.getElementById('content-albuns-div');
+  albumContainer.innerHTML = '';
+
+  albumList.forEach((album) => {
+    const albumPriceNumber = parseFloat(album.price);
+    if (albumPriceNumber <= maxPrice) {
       const card = createAlbumCard(album);
       albumContainer.appendChild(card);
-    });
-  }
+    }
+  });
+}
 
-  document.addEventListener('DOMContentLoaded', displayAlbumCards);
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayAlbumCards(150); 
+
+  const inputRange = document.querySelector('#content-preco__input');
+  inputRange.addEventListener('input', (event) => {
+    const maxPrice = parseFloat(event.target.value);
+    displayAlbumCards(maxPrice); 
+  });
+});
+
+

@@ -4,6 +4,7 @@
     background-color: var(--gray-6);
     border: 2px solid var(--gray-6);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .header-figure__img{
