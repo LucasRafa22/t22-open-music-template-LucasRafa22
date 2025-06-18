@@ -1,5 +1,5 @@
 import { applyInputRangeStyle } from "./inputRange.js"
-import { albumList } from "./albumsDatabase.js"
+import { fetchAlbums } from "./api.js"
 import { darkMode } from "./theme.js"
 
 function routine(){
@@ -49,12 +49,13 @@ function createAlbumCard(album) {
     return card;
   }
   
-function displayAlbumCards(maxPrice) {
+function displayAlbumCards(albums, maxPrice) {
   const albumContainer = document.getElementById('content-albuns-div');
   albumContainer.innerHTML = '';
 
-  albumList.forEach((album) => {
+  albums.forEach(album => {
     const albumPriceNumber = parseFloat(album.price);
+
     if (albumPriceNumber <= maxPrice) {
       const card = createAlbumCard(album);
       albumContainer.appendChild(card);
@@ -62,15 +63,17 @@ function displayAlbumCards(maxPrice) {
   });
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  displayAlbumCards(150); 
+document.addEventListener('DOMContentLoaded', async () => {
+  const albums = await fetchAlbums();
 
   const inputRange = document.querySelector('#content-preco__input');
-  inputRange.addEventListener('input', (event) => {
-    const maxPrice = parseFloat(event.target.value);
-    displayAlbumCards(maxPrice); 
-  });
+
+  function updateAlbums() {
+    const maxPrice = parseFloat(inputRange.value);
+    displayAlbumCards(albums, maxPrice);
+  }
+  
+  updateAlbums();
+
+  inputRange.addEventListener('input', updateAlbums);
 });
-
-
